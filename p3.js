@@ -12,3 +12,8 @@ document.getElementById("scroll-to-top").addEventListener("click", function () {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 });
+
+function menuDrop() {
+    var drop = document.getElementById("nav2");
+    drop.classList.toggle("menu-drop");
+}

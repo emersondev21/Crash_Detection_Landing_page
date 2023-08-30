@@ -13,7 +13,7 @@
 
 /* estilo do thumb (o botão que pode ser arrastado) */
 ::-webkit-scrollbar-thumb {
-    background-color: #ccc;
+    background-color: #e74443;
     border-radius: 5px;
 }
 
@@ -24,7 +24,7 @@
 
 /* estilo do track (a área onde o thumb se move) */
 ::-webkit-scrollbar-track {
-    background-color: #121212;
+    background-color: #0a0a0a;
 }
 
 body {
@@ -39,7 +39,7 @@ body {
 header {
     box-sizing: border-box;
     width: 100vw;
-    height: 70px;
+    height: 80px;
     top: 0;
     left: 0;
     padding-top: 20px;
@@ -56,6 +56,7 @@ header {
 
 .logo {
     height: 40px;
+    font-size: 15px;
 }
 
 a {
@@ -101,7 +102,13 @@ ul {
     color: #e74443;
 }
 
-.header3 {
+/* .linguica{
+    width: 100vw;
+    height: 1000px;
+    background-color: purple;
+} */
+
+.nav2 {
     display: none;
 }
 
@@ -110,19 +117,24 @@ ul {
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 1em;
     }
 
-    .header2 :not(ion-icon) {
-        display: none;
-    }
-
-    .header3 {
+    .nav1 {
         height: 50px;
-        padding-top: 20px;
+        width: 100%;
+        /* padding: 20px 0 0 0; */
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
-        background-color: #121212;
+        align-items: center;
+        justify-content: center;
+        background-color: #0a0a0a;
+    }
+
+    /* estilo da barra de rolagem */
+    ::-webkit-scrollbar {
+        width: 0;
+        height: 0;
     }
 }
 
@@ -147,9 +159,9 @@ ul {
         justify-content: flex-start;
         position: absolute;
         width: 100%;
-        top: 70px;
+        top: 80px;
         right: 0px;
-        background: #252525;
+        background: #0a0a0a;
         transition: 0.6s;
         z-index: 1000;
         width: 100vw;
@@ -157,6 +169,13 @@ ul {
         align-items: center;
         visibility: hidden;
         overflow-y: hidden;
+    }
+
+    nav ul{
+        margin-top: 15%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     #nav.active #menu {
@@ -167,14 +186,6 @@ ul {
         flex-direction: column;
         justify-content: flex-start;
         overflow-y: auto;
-    }
-
-    #menu a {
-        align-items: center;
-        padding: 1rem 0;
-        margin: 0 1rem;
-        width: 100vw;
-        border-bottom: 2px solid rgba(0, 0, 0, 0.05);
     }
 
     #btn-mobile {
@@ -215,5 +226,12 @@ ul {
     #nav.active #hamburger::after {
         transform: rotate(-135deg);
         top: -7px;
+    }
+
+    .menu-drop {
+        display: flex;
+        height: 100vh;
+        visibility: visible;
+        transition: all .2s;
     }
 }
