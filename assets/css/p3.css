@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
+    transition: all .5s;
 }
 
 body {
@@ -152,6 +153,24 @@ section {
     text-transform: uppercase;
 }
 
+.home .button {
+    text-align: center;
+    text-decoration: none;
+    width: 30%;
+    background-color: #e74443;
+    color: #0a0a0a;
+    border: solid 0px;
+    border-radius: 5px;
+}
+
+.home a {
+    color: #0a0a0a;
+}
+
+.home .button:hover {
+    text-decoration: none;
+}
+
 .home img {
     width: 45%;
     min-width: 20%;
@@ -175,6 +194,11 @@ section {
     justify-content: space-around;
 }
 
+.objetivo img {
+    width: 35px;
+    transform: scaleX(-1);
+}
+
 .problema {
     display: flex;
     flex-direction: column;
@@ -185,7 +209,12 @@ section {
 
 .problema h1 {
     font-size: 50px;
+}
 
+.solucao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .demo_contato {
@@ -221,8 +250,45 @@ section {
     align-items: center;
 }
 
+.demo_contato .topic:hover {
+    background-color: #ff7171;
+    transition: all .5s;
+}
+
 .op_contatos img {
     width: 64px;
+}
+
+.time {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    color: #e74443;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.time .block {
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 6rem;
+}
+
+.time .perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.time img {
+    width: 90px;
+}
+
+.time span {
+    font-size: 30px;
 }
 
 .teste {
