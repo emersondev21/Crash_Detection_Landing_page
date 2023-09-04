@@ -11,6 +11,10 @@ body {
     align-items: center;
 }
 
+section {
+    height: 100vh;
+}
+
 .background {
     /* align-self: center; */
     position: fixed;
@@ -177,10 +181,14 @@ section {
 }
 
 .projeto {
+    background-color: #0a0a0a;
     padding: 0 6em;
-    height: 100vh;
+    height: 10vh;
     color: #e74443;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .projeto .inverted {
@@ -199,20 +207,10 @@ section {
     transform: scaleX(-1);
 }
 
-.problema {
+.demo {
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    height: 100vh;
-    color: #e74443;
-}
-
-.problema h1 {
-    font-size: 50px;
-}
-
-.solucao {
-    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -513,5 +511,108 @@ footer .menu li a:hover {
 
     100% {
         transform: rotate(360deg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+.container{
+    width: 246px;
+    overflow: hidden;
+}
+.container .text{
+    position: relative;
+    color: #4070F4;
+    font-size: 30px;
+    font-weight: 600;
+}
+.container .text.first-text{
+    color: #FFF;
+}
+.text.sec-text:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #010718;
+    border-left: 2px solid #4070F4;
+    animation: animate 4s steps(12) infinite;
+}
+@keyframes animate{
+    40%, 60%{
+        left: calc(100% + 4px);
+    }
+    100%{
+        left: 0%;
+    }
+} */
+
+.animated-text{
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+}
+
+.animated-text span{
+    position: relative;
+}
+
+.animated-text span::before{
+    content: "Youtuber";
+    color: #e74443;
+    animation: words 20s infinite;
+}
+
+.animated-text span::after{
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    background-color: #0a0a0a;
+    border-left: 2px solid #e74443;
+    right: -8px;
+    animation: cursor .8s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+    to{
+        border-left: 2px solid #0a0a0a;
+    }
+}
+
+@keyframes words {
+    0%,25%{
+        content: "Visão Computacional";
+    }
+    26%,50%{
+        content: "Machine Learning";
+    }
+    51%,75%{
+        content: "Detecção Em Tempo Real";
+    }
+    76%,100%{
+        content: "Análise de Vídeo";
+    }
+}
+
+@keyframes typing {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 8px);
     }
 }

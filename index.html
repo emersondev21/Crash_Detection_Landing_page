@@ -5,7 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
     <link rel="stylesheet" href="assets/css/p3.css">
+    <link rel="stylesheet" href="assets/css/scrollReveal.css">
+
     <link href="dist/hamburgers.css" rel="stylesheet">
     <link rel="shortcut icon" href="assets/img/cctv-camera.png" type="image/x-icon">
     <title>CrashDetection</title>
@@ -60,37 +67,26 @@
             <img src="assets/img/screen_home.png" alt="" srcset="">
         </section>
 
+        <!-- <section class="problema" id="problema">
+        </section> -->
+
         <section class="projeto" id="projeto">
             <img src="assets/img/camera-de-cftv.png" alt="" srcset="">
-            <h1>
-                Nossa companhia, Crash Detection está desenvolvendo um sistema de detecção de acidentes, para ajudar
-                órgãos públicos de saúde e segurança fazerem a devida ajuda de forma mais rápida e precisa com um
-                sistema que detecta acidentes com varias câmeras de monitoramento em tempo real.
-            </h1>
+            <!-- <h1>
+                Utilizando avanços em visão computacional e aprendizado de máquina para criar um sistema de Detecção de
+                Acidentes em tempo real. Instalamos câmeras em locais estratégicos nas estradas e, por meio da análise
+                de vídeo, somos capazes de detectar acidentes ou situações de perigo iminente.
+            </h1> -->
+            <div class="animated-text">
+                <span></span>
+            </div>
             <img src="assets/img/camera-de-cftv.png" alt="" srcset="" class="inverted">
         </section>
 
-        <section class="objetivo" id="objetivo">
-            <div class="problema" id="problema">
-                <h1>
-                    Problema
-                </h1>
-                <h2>
-                    <img src="assets/img/cctv.png" alt="" srcset="">
-                    Demora ao acionar socorro;
-                </h2>
-                <h2>
-                    <img src="assets/img/cctv.png" alt="" srcset="">
-                    Dificuldade de perícia do acidente, pois as testemunhas na maiorias das vezes são pessoas
-                </h2>
-            </div>
-            <div class="solucao" id="solucao">
-                <video
-                    src="assets/videos/cd_demo.mp4"
-                    width="80%" controls>
+        <div class="demo" id="demo">
+                <video src="assets/videos/cd_demo.mp4" width="70%" controls>
                 </video>
-            </div>
-        </section>
+        </div>
 
         <section class="demo_contato" id="demo_contato">
             <h1>
@@ -132,15 +128,15 @@
                     <img src="assets/img/icons8-usuário-homem-com-círculo-50.png" alt="" srcset="">
                     <span class="nome">Matheus Calado</span>
                 </div>
-            <div class="perfil">
-                <img src="assets/img/icons8-usuário-homem-com-círculo-50.png" alt="" srcset="">
-                <span class="nome">José Santiago</span>
+                <div class="perfil">
+                    <img src="assets/img/icons8-usuário-homem-com-círculo-50.png" alt="" srcset="">
+                    <span class="nome">José Santiago</span>
+                </div>
+                <div class="perfil">
+                    <img src="assets/img/icons8-usuário-homem-com-círculo-50.png" alt="" srcset="">
+                    <span class="nome">Pedro Pereira</span>
+                </div>
             </div>
-            <div class="perfil">
-                <img src="assets/img/icons8-usuário-homem-com-círculo-50.png" alt="" srcset="">
-                <span class="nome">Pedro Pereira</span>
-            </div>
-        </div>
         </section>
 
         <section class="teste" id="teste">
@@ -150,12 +146,14 @@
             <input placeholder="email@example.com" name="" id="input_email">
             <img src="assets/img/vigilancia.png" alt="" srcset="">
         </section>
+
     </div>
 
     <footer>
         <div class="footer-main">
             <ul class="icones_social">
-                <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                <li><a href="https://www.youtube.com/watch?v=hvL1339luv0"><ion-icon name="logo-facebook"></ion-icon></a>
+                </li>
                 <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
                 <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
                 <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></ion-icon></li>
@@ -168,10 +166,8 @@
             </ul>
         </div>
     </footer>
-
 </body>
 <script type="text/javascript" src="assets/script/p3.js"></script>
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script type="text/javascript" src="assets/script/scrollReveal.js"></script>
 
 </html>
