@@ -215,7 +215,7 @@ section {
     align-items: center;
 }
 
-.demo_contato {
+.demo_contato, .demo_ben {
     height: 100vh;
     color: #e74443;
     display: flex;
@@ -224,11 +224,11 @@ section {
     justify-content: space-around;
 }
 
-.demo_contato h1 {
+.demo_contato h1 , .demo_ben h1{
     font-size: 50px;
 }
 
-.op_contatos {
+.op_contatos , .beneficios{
     width: 20%;
     display: flex;
     flex-direction: column;
@@ -236,7 +236,7 @@ section {
     gap: 1rem;
 }
 
-.demo_contato .topic {
+.demo_contato .topic{
     height: 50px;
     border-radius: 5px;
     color: #0a0a0a;
@@ -248,7 +248,21 @@ section {
     align-items: center;
 }
 
-.demo_contato .topic:hover {
+.demo_ben .topic{
+    height: 50px;
+    border-radius: 5px;
+    color: #0a0a0a;
+    font-weight: bolder;
+    background-color: #e74443;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+.demo_contato .topic:hover, .demo_ben .topic:hover {
     background-color: #ff7171;
     transition: all .5s;
 }
