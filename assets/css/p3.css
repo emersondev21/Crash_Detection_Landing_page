@@ -114,7 +114,6 @@ a:hover::after {
     transform-origin: bottom left;
 }
 
-
 ul {
     display: flex;
     flex-direction: row;
@@ -215,7 +214,8 @@ section {
     align-items: center;
 }
 
-.demo_contato, .demo_ben {
+.demo_contato,
+.demo_ben {
     height: 100vh;
     color: #e74443;
     display: flex;
@@ -224,11 +224,13 @@ section {
     justify-content: space-around;
 }
 
-.demo_contato h1 , .demo_ben h1{
+.demo_contato h1,
+.demo_ben h1 {
     font-size: 50px;
 }
 
-.op_contatos , .beneficios{
+.op_contatos,
+.beneficios {
     width: 20%;
     display: flex;
     flex-direction: column;
@@ -236,7 +238,7 @@ section {
     gap: 1rem;
 }
 
-.demo_contato .topic{
+.demo_contato .topic {
     height: 50px;
     border-radius: 5px;
     color: #0a0a0a;
@@ -248,7 +250,7 @@ section {
     align-items: center;
 }
 
-.demo_ben .topic{
+.demo_ben .topic {
     height: 50px;
     border-radius: 5px;
     color: #0a0a0a;
@@ -262,7 +264,8 @@ section {
     gap: 2rem;
 }
 
-.demo_contato .topic:hover, .demo_ben .topic:hover {
+.demo_contato .topic:hover,
+.demo_ben .topic:hover {
     background-color: #ff7171;
     transition: all .5s;
 }
@@ -528,69 +531,23 @@ footer .menu li a:hover {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-.container{
-    width: 246px;
-    overflow: hidden;
-}
-.container .text{
-    position: relative;
-    color: #4070F4;
-    font-size: 30px;
-    font-weight: 600;
-}
-.container .text.first-text{
-    color: #FFF;
-}
-.text.sec-text:before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: #010718;
-    border-left: 2px solid #4070F4;
-    animation: animate 4s steps(12) infinite;
-}
-@keyframes animate{
-    40%, 60%{
-        left: calc(100% + 4px);
-    }
-    100%{
-        left: 0%;
-    }
-} */
-
-.animated-text{
+.animated-text {
     font-size: 34px;
     font-weight: 600;
     min-width: 280px;
 }
 
-.animated-text span{
+.animated-text span {
     position: relative;
 }
 
-.animated-text span::before{
+.animated-text span::before {
     content: "Youtuber";
     color: #e74443;
     animation: words 20s infinite;
 }
 
-.animated-text span::after{
+.animated-text span::after {
     content: "";
     position: absolute;
     width: calc(100% + 8px);
@@ -602,31 +559,58 @@ footer .menu li a:hover {
 }
 
 @keyframes cursor {
-    to{
+    to {
         border-left: 2px solid #0a0a0a;
     }
 }
 
 @keyframes words {
-    0%,25%{
+
+    0%,
+    25% {
         content: "Visão Computacional";
     }
-    26%,50%{
+
+    26%,
+    50% {
         content: "Machine Learning";
     }
-    51%,75%{
+
+    51%,
+    75% {
         content: "Detecção Em Tempo Real";
     }
-    76%,100%{
+
+    76%,
+    100% {
         content: "Análise de Vídeo";
     }
 }
 
 @keyframes typing {
-    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+
+    10%,
+    15%,
+    30%,
+    35%,
+    50%,
+    55%,
+    70%,
+    75%,
+    90%,
+    95% {
         width: 0;
     }
-    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+
+    5%,
+    20%,
+    25%,
+    40%,
+    45%,
+    60%,
+    65%,
+    80%,
+    85% {
         width: calc(100% + 8px);
     }
 }
