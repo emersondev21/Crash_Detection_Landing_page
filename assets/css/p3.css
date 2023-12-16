@@ -76,8 +76,9 @@ header {
     position: sticky;
 }
 
-header h1::selection,
-header ul::selection {
+h1::selection,
+ul::selection,
+span::selection {
     color: #0a0a0a;
     background-color: #e74443;
 }
@@ -274,7 +275,7 @@ section {
     width: 64px;
 }
 
-.time {
+.equipe {
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -284,7 +285,7 @@ section {
     gap: 2rem;
 }
 
-.time .block {
+.equipe .block {
     width: 65%;
     display: flex;
     flex-direction: row;
@@ -292,25 +293,31 @@ section {
     gap: 6rem;
 }
 
-.time .perfil {
+.equipe .perfil {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.time img {
+.equipe img {
     border: solid 3px transparent;
-    width: 150px;
+    width: 130px;
     border-radius: 100px;
 }
 
-.time img:hover {
+.equipe img:hover {
     border: solid 3px #e74443;
 }
 
-.time span {
-    font-size: 30px;
+.equipe span {
+    font-size: 25px;
     text-align: center;
+}
+
+.equipe .mentor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .teste {
