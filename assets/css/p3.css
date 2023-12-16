@@ -299,11 +299,18 @@ section {
 }
 
 .time img {
-    width: 90px;
+    border: solid 3px transparent;
+    width: 150px;
+    border-radius: 100px;
+}
+
+.time img:hover {
+    border: solid 3px #e74443;
 }
 
 .time span {
     font-size: 30px;
+    text-align: center;
 }
 
 .teste {
