@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
+:root {
+    --main-color: #e74443;
+    --background-color: #0a0a0a;
+    --secondary-color: #ff7171;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -11,12 +17,16 @@ body {
     align-items: center;
 }
 
+p {
+    color: var(--main-color);
+}
+
 section {
     height: 100vh;
 }
 
 .background {
-    /* align-self: center; */
+
     position: fixed;
     top: 0;
     left: 0;
@@ -24,34 +34,34 @@ section {
     height: 100%;
     background-size: auto;
     background-repeat: no-repeat;
-    /* animation: rotateBackground 10s linear infinite; */
+
     z-index: -10;
-    /* Ajuste a duração e o tipo de animação conforme necessário */
+
 }
 
-/* estilo da barra de rolagem */
+
 ::-webkit-scrollbar {
     width: 10px;
 }
 
-/* estilo do thumb (o botão que pode ser arrastado) */
+
 ::-webkit-scrollbar-thumb {
-    background-color: #e74443;
+    background-color: var(--main-color);
     border-radius: 5px;
 }
 
-/* estilo do thumb quando o mouse está sobre ele */
+
 ::-webkit-scrollbar-thumb:hover {
     background-color: none;
 }
 
-/* estilo do track (a área onde o thumb se move) */
+
 ::-webkit-scrollbar-track {
-    background-color: #0a0a0a;
+    background-color: var(--background-color);
 }
 
 body {
-    background-color: #0a0a0a;
+    background-color: var(--background-color);
     font-family: 'Oswald', sans-serif;
     overflow-x: hidden;
     background-repeat: no-repeat;
@@ -70,8 +80,8 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    color: #e74443;
-    background-color: #0a0a0a;
+    color: var(--main-color);
+    background-color: var(--background-color);
     justify-content: space-around;
     position: sticky;
 }
@@ -79,8 +89,8 @@ header {
 h1::selection,
 ul::selection,
 span::selection {
-    color: #0a0a0a;
-    background-color: #e74443;
+    color: var(--background-color);
+    background-color: var(--main-color);
 }
 
 .logo {
@@ -92,7 +102,7 @@ a {
     text-decoration: none;
     display: inline-block;
     position: relative;
-    color: #e74443;
+    color: var(--main-color);
 }
 
 a::after {
@@ -103,14 +113,12 @@ a::after {
     height: 2px;
     bottom: 0;
     left: 0;
-    color: #0087ca;
-    background-color: #e74443;
+    background-color: var(--main-color);
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
 
 a:hover::after {
-    color: #0087ca;
     transform: scaleX(1);
     transform-origin: bottom left;
 }
@@ -127,7 +135,7 @@ ul {
 
 #btn-mobile {
     display: none;
-    color: #e74443;
+    color: var(--main-color);
 }
 
 .nav2 {
@@ -138,13 +146,13 @@ section {
     backdrop-filter: blur(10px);
     display: flex;
     align-items: center;
-    border-top: solid 1px #e74443;
-    border-bottom: solid 1px #e74443;
+    border-top: solid 1px var(--main-color);
+    border-bottom: solid 1px var(--main-color);
 }
 
 .home {
     padding: 6em;
-    color: #e74443;
+    color: var(--main-color);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -161,14 +169,14 @@ section {
     text-align: center;
     text-decoration: none;
     width: 30%;
-    background-color: #e74443;
-    color: #0a0a0a;
+    background-color: var(--main-color);
+    color: var(--background-color);
     border: solid 0px;
     border-radius: 5px;
 }
 
 .home a {
-    color: #0a0a0a;
+    color: var(--background-color);
 }
 
 .home .button:hover {
@@ -181,10 +189,10 @@ section {
 }
 
 .projeto {
-    background-color: #0a0a0a;
+    background-color: var(--background-color);
     padding: 0 6em;
     height: 10vh;
-    color: #e74443;
+    color: var(--main-color);
     text-align: center;
     display: flex;
     justify-content: center;
@@ -218,7 +226,7 @@ section {
 .demo_contato,
 .demo_ben {
     height: 100vh;
-    color: #e74443;
+    color: var(--main-color);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -242,9 +250,9 @@ section {
 .demo_contato .topic {
     height: 50px;
     border-radius: 5px;
-    color: #0a0a0a;
+    color: var(--background-color);
     font-weight: bolder;
-    background-color: #e74443;
+    background-color: var(--main-color);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -254,9 +262,9 @@ section {
 .demo_ben .topic {
     height: 50px;
     border-radius: 5px;
-    color: #0a0a0a;
+    color: var(--background-color);
     font-weight: bolder;
-    background-color: #e74443;
+    background-color: var(--main-color);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -267,7 +275,7 @@ section {
 
 .demo_contato .topic:hover,
 .demo_ben .topic:hover {
-    background-color: #ff7171;
+    background-color: var(--secondary-color);
     transition: all .5s;
 }
 
@@ -279,7 +287,7 @@ section {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    color: #e74443;
+    color: var(--main-color);
     justify-content: center;
     align-items: center;
     gap: 2rem;
@@ -307,7 +315,7 @@ section {
 }
 
 .equipe img:hover {
-    border: solid 3px #e74443;
+    border: solid 3px var(--main-color);
 }
 
 .equipe span {
@@ -324,7 +332,7 @@ section {
 .teste {
     width: 100%;
     height: 100vh;
-    color: #e74443;
+    color: var(--main-color);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -334,12 +342,12 @@ section {
 
 .teste input {
     padding: 0 10px;
-    color: #e74443;
+    color: var(--main-color);
     width: 20em;
     height: 2em;
     border-radius: 5px;
-    border: solid 1px #e74443;
-    background-color: #0a0a0a;
+    border: solid 1px var(--main-color);
+    background-color: var(--background-color);
     outline: none;
 }
 
@@ -352,7 +360,7 @@ section {
 }
 
 .footer-main {
-    background-color: #0a0a0a;
+    background-color: var(--background-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -376,7 +384,7 @@ footer .menu li {
 
 footer .icones_social li a {
     font-size: 1.5em;
-    color: #e74443;
+    color: var(--main-color);
     margin: 0 10px;
     display: inline-block;
     transition: 0.5s;
@@ -388,7 +396,7 @@ footer .icones_social li a:hover {
 
 footer .menu li a {
     font-size: 1.2em;
-    color: #ff7171;
+    color: var(--secondary-color);
     margin: 0 10px;
     display: inline-block;
     text-decoration: none;
@@ -412,33 +420,33 @@ footer .menu li a:hover {
     .nav1 {
         height: 50px;
         width: 100%;
-        /* padding: 20px 0 0 0; */
+
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        background-color: #0a0a0a;
+        background-color: var(--background-color);
     }
 
-    /* estilo da barra de rolagem */
+
     ::-webkit-scrollbar {
         width: 0;
         height: 0;
     }
 
-    /* .home {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
 
-    .home h1 {
-        text-align: center;
-    } */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-    .background{
-        display: none;
-    }
+.home h1 {
+    text-align: center;
+}
+
+*/ .background {
+    display: none;
+}
 
 }
 
@@ -469,7 +477,7 @@ footer .menu li a:hover {
         width: 100%;
         top: 80px;
         right: 0px;
-        background: #0a0a0a;
+        background: var(--background-color);
         transition: 0.6s;
         z-index: 1000;
         width: 100vw;
@@ -549,7 +557,7 @@ footer .menu li a:hover {
         flex-direction: column;
         align-items: center;
         padding: 100px 10px;
-        /* justify-content: center; */
+
         align-items: center;
         gap: 1rem;
     }
@@ -559,7 +567,7 @@ footer .menu li a:hover {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-    }   
+    }
 
     .home .button {
         width: 80%;
@@ -579,12 +587,13 @@ footer .menu li a:hover {
         display: flex;
         flex-direction: column;
         height: 100vh;
-        color: #e74443;
+        color: var(--main-color);
         justify-content: center;
         align-items: center;
         gap: 2rem;
+        padding: 30px 0;
     }
-    
+
     .equipe .block {
         width: 100%;
         display: flex;
@@ -593,20 +602,20 @@ footer .menu li a:hover {
         gap: 2rem;
         flex-wrap: wrap;
     }
-    
+
     .equipe .perfil {
         display: flex;
         flex-direction: column;
         align-items: center;
         flex-wrap: wrap;
     }
-    
+
     .equipe img {
         border: solid 3px transparent;
         width: 130px;
         border-radius: 100px;
     }
-    
+
     .equipe span {
         font-size: 25px;
         text-align: center;
@@ -626,54 +635,54 @@ footer .menu li a:hover {
 
     .demo_contato,
     .demo_ben {
-    height: 50vh;
-    color: #e74443;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* justify-content: space-around; */
-}
+        height: 50vh;
+        color: var(--main-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-.demo_contato h1,
-.demo_ben h1 {
-    font-size: 50px;
-    text-align: center;
-}
+    }
 
-.op_contatos,
-.beneficios {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    gap: 1rem;
-}
+    .demo_contato h1,
+    .demo_ben h1 {
+        font-size: 50px;
+        text-align: center;
+    }
 
-.demo_contato .topic {
-    height: 50px;
-    border-radius: 5px;
-    color: #0a0a0a;
-    font-weight: bolder;
-    background-color: #e74443;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
+    .op_contatos,
+    .beneficios {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 1rem;
+    }
 
-.demo_ben .topic {
-    height: 50px;
-    border-radius: 5px;
-    color: #0a0a0a;
-    font-weight: bolder;
-    background-color: #e74443;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 2rem;
-}
+    .demo_contato .topic {
+        height: 50px;
+        border-radius: 5px;
+        color: var(--background-color);
+        font-weight: bolder;
+        background-color: var(--main-color);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .demo_ben .topic {
+        height: 50px;
+        border-radius: 5px;
+        color: var(--background-color);
+        font-weight: bolder;
+        background-color: var(--main-color);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+    }
 
     .invisivel {
         display: flex;
@@ -703,7 +712,7 @@ footer .menu li a:hover {
 
 .animated-text span::before {
     content: "Youtuber";
-    color: #e74443;
+    color: var(--main-color);
     animation: words 20s infinite;
 }
 
@@ -712,15 +721,15 @@ footer .menu li a:hover {
     position: absolute;
     width: calc(100% + 8px);
     height: 150%;
-    background-color: #0a0a0a;
-    border-left: 2px solid #e74443;
+    background-color: var(--background-color);
+    border-left: 2px solid var(--main-color);
     right: -8px;
     animation: cursor .8s infinite, typing 20s steps(14) infinite;
 }
 
 @keyframes cursor {
     to {
-        border-left: 2px solid #0a0a0a;
+        border-left: 2px solid var(--background-color);
     }
 }
 
