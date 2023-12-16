@@ -26,7 +26,7 @@ section {
 }
 
 .background {
-
+    /* align-self: center; */
     position: fixed;
     top: 0;
     left: 0;
@@ -34,28 +34,26 @@ section {
     height: 100%;
     background-size: auto;
     background-repeat: no-repeat;
-
     z-index: -10;
-
 }
 
-
+/* estilo da barra de rolagem */
 ::-webkit-scrollbar {
     width: 10px;
 }
 
-
+/* estilo do thumb (o botão que pode ser arrastado) */
 ::-webkit-scrollbar-thumb {
     background-color: var(--main-color);
     border-radius: 5px;
 }
 
-
+/* estilo do thumb quando o mouse está sobre ele */
 ::-webkit-scrollbar-thumb:hover {
     background-color: none;
 }
 
-
+/* estilo do track (a área onde o thumb se move) */
 ::-webkit-scrollbar-track {
     background-color: var(--background-color);
 }
@@ -396,7 +394,7 @@ footer .icones_social li a:hover {
 
 footer .menu li a {
     font-size: 1.2em;
-    color: var(--secondary-color);
+    color: #ff7171;
     margin: 0 10px;
     display: inline-block;
     text-decoration: none;
@@ -420,7 +418,6 @@ footer .menu li a:hover {
     .nav1 {
         height: 50px;
         width: 100%;
-
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -428,25 +425,16 @@ footer .menu li a:hover {
         background-color: var(--background-color);
     }
 
-
+    /* estilo da barra de rolagem */
     ::-webkit-scrollbar {
         width: 0;
         height: 0;
     }
 
 
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.home h1 {
-    text-align: center;
-}
-
-*/ .background {
-    display: none;
-}
+    .background {
+        display: none;
+    }
 
 }
 
@@ -557,7 +545,7 @@ footer .menu li a:hover {
         flex-direction: column;
         align-items: center;
         padding: 100px 10px;
-
+        /* justify-content: center; */
         align-items: center;
         gap: 1rem;
     }
@@ -640,7 +628,6 @@ footer .menu li a:hover {
         display: flex;
         flex-direction: column;
         align-items: center;
-
     }
 
     .demo_contato h1,
